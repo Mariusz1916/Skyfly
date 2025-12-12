@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyFly – Powietrzne Taksówki | Loty widokowe & Air Taxi</title>
+  <meta name="description" content="SkyFly: autonomiczne kapsuły powietrzne eVTOL. Loty widokowe w Zakopanem, transfery VIP, abonamenty firmowe. Rezerwuj online." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#home"><span class="mark"></span><span>SkyFly</span></a>
+      <div>
+        <a href="#produkty">Produkty</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt" class="cta">Rezerwuj</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <span class="tag">Urban Air Mobility • eVTOL</span>
+        <h1>Powietrzne taksówki <br/>dla turystyki i miast</h1>
+        <p>SkyFly to szybkie, bezkorkowe loty kapsułami eVTOL. Startujemy w Zakopanem – loty widokowe nad Tatrami, transfery VIP i abonamenty dla firm. Rezerwuj przez aplikację lub na stronie.</p>
+        <div class="facts">
+          <div class="fact"><div class="big">10–15 min</div><div>Średni czas lotu widokowego</div></div>
+          <div class="fact"><div class="big">1–2 os.</div><div>Pojemność kapsuły</div></div>
+          <div class="fact"><div class="big">AI</div><div>Systemy unikania kolizji, redundancja</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Rezerwacja demo</h3>
+        <form id="bookingForm">
+          <label>Produkt
+            <select name="product" required>
+              <option>Lot standardowy (10 km)</option>
+              <option>Lot premium (widokowy)</option>
+              <option>Transfer lotniskowy (KRK → Zakopane)</option>
+              <option>Abonament firmowy</option>
+            </select>
+          </label>
+          <label>Data <input type="date" name="date" required></label>
+          <label>Imię i nazwisko <input type="text" name="name" placeholder="Jan Kowalski" required></label>
+          <label>Email <input type="email" name="email" placeholder="jan@firma.pl" required></label>
+          <button type="submit">Wyślij rezerwację</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="produkty" class="section">
+      <h2>Produkty i usługi</h2>
+      <p class="lead">Autonomiczne kapsuły powietrzne eVTOL i modułowe mini‑vertiporty. Oferta szyta na miarę: loty widokowe, transfery i abonamenty.</p>
+      <div class="grid3">
+        <div class="card">
+          <h3>Lot standardowy</h3>
+          <p class="price">100–150 zł / 10 km</p>
+          <ul class="list">
+            <li>Dynamiczne ceny jak w Uber – zależne od popytu</li>
+            <li>Rezerwacja przez aplikację / www</li>
+            <li>Idealny na szybkie przeloty nad miastem</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Lot premium (widokowy)</h3>
+          <p class="price">200–400 zł</p>
+          <ul class="list">
+            <li>Personalizowana trasa nad Tatrami i panoramą miasta</li>
+            <li>Obsługa VIP, zdjęcia/film z lotu (opcjonalnie)</li>
+            <li>Idealne doświadczenie dla gości hoteli 4–5★</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Transfer lotniskowy</h3>
+          <p class="price">1 500–2 500 zł</p>
+          <ul class="list">
+            <li>Kraków (KRK) ⇄ Zakopane</li>
+            <li>Gwarancja dostępności kapsuł</li>
+            <li>Oszczędność czasu, bez korków</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid3" style="margin-top:16px;">
+        <div class="card">
+          <h3>Abonament firmowy</h3>
+          <p class="price">od 6 000 zł / mies.</p>
+          <ul class="list">
+            <li>Dedykowane sloty i kapsuły</li>
+            <li>Priorytetowe rezerwacje</li>
+            <li>Rozliczenia cykliczne</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Reklama na kapsule</h3>
+          <p class="price">2 000 zł / mies.</p>
+          <ul class="list">
+            <li>Branding zewnętrzny</li>
+            <li>Widoczność w punktach turystycznych</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Reklama w aplikacji</h3>
+          <p class="price">1 500 zł / mies.</p>
+          <ul class="list">
+            <li>Formaty display i video</li>
+            <li>Targetowanie turystyczne</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cennik" class="section">
+      <h2>Cennik i porównanie</h2>
+      <p class="lead">Przejrzyste pakiety i porównanie względem usług naziemnych (Uber/Bolt) oraz atrakcji górskich (PKL).</p>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Start</h3>
+          <div class="amount">100–150 zł</div>
+          <div class="note">Lot standardowy 10 km</div>
+          <a class="btn" href="#kontakt">Rezerwuj</a>
+        </div>
+        <div class="plan" style="border-color:#00c2ff;">
+          <h3>Premium</h3>
+          <div class="amount">200–400 zł</div>
+          <div class="note">Lot widokowy z obsługą VIP</div>
+          <a class="btn" href="#kontakt">Rezerwuj</a>
+        </div>
+        <div class="plan">
+          <h3>Business</h3>
+          <div class="amount">od 6 000 zł/mies.</div>
+          <div class="note">Abonament firmowy</div>
+          <a class="btn" href="#kontakt">Skontaktuj się</a>
+        </div>
+      </div>
+
+      <h3 style="margin-top:24px;">Porównanie</h3>
+      <table class="table">
+        <thead>
+          <tr><th>Usługa</th><th>Cena orientacyjna</th><th>Średni czas</th><th>Doświadczenie</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SkyFly – Lot premium</td><td>200–400 zł</td><td>10–15 min</td><td>Widok z lotu ptaka, VIP</td></tr>
+          <tr><td>PKL – Kasprowy Wierch (DW)</td><td>129–165 zł</td><td>~20 min + przesiadka</td><td>Atrakcja masowa</td></tr>
+          <tr><td>Uber Black (miasto)</td><td>3.5–5 zł/km + start</td><td>zależny od korków</td><td>Premium naziemny</td></tr>
+          <tr><td>Bolt Premium (miasto)</td><td>3.2–4.5 zł/km + start</td><td>zależny od korków</td><td>Premium naziemny</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="faq" class="section faq">
+      <h2>Najczęstsze pytania (FAQ)</h2>
+      <details>
+        <summary>Jak wygląda bezpieczeństwo lotów?</summary>
+        <p>Kapsuły wyposażone są w AI, systemy unikania kolizji, redundancję napędu i spadochron awaryjny. Loty realizujemy zgodnie z europejskimi regulacjami dla UAM.</p>
+      </details>
+      <details>
+        <summary>Gdzie startujecie?</summary>
+        <p>Etap 1: Zakopane – loty widokowe. Kolejne etapy: rozwój infrastruktury vertiportów i ekspansja do Krakowa i Warszawy.</p>
+      </details>
+      <details>
+        <summary>Czy można rezerwować z wyprzedzeniem?</summary>
+        <p>Tak. Oferujemy rezerwacje online oraz abonamenty firmowe z gwarantowanymi slotami.</p>
+      </details>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <div>
+        <h2>Kontakt i rezerwacje</h2>
+        <p class="lead">Wypełnij formularz lub napisz do nas: <a href="mailto:rezerwacje@skyfly.pl">rezerwacje@skyfly.pl</a></p>
+        <form id="bookingForm">
+          <label>Produkt
+            <select name="product" required>
+              <option>Lot standardowy (10 km)</option>
+              <option>Lot premium (widokowy)</option>
+              <option>Transfer lotniskowy (KRK → Zakopane)</option>
+              <option>Abonament firmowy</option>
+            </select>
+          </label>
+          <label>Data <input type="date" name="date" required></label>
+          <label>Imię i nazwisko <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+          <label>Wiadomość <textarea name="msg" rows="4" placeholder="Dodatkowe informacje"></textarea></label>
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Dane firmy</h3>
+        <p>SkyFly Sp. z o.o.<br>Zakopane • Kraków • Warszawa</p>
+        <p><strong>Partnerzy:</strong> Joby, Lilium, miasta Smart City, dostawcy energii.</p>
+        <p><strong>Godziny:</strong> 9:00–18:00 (PN–PT)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="cols">
+      <div>
+        <h4>SkyFly</h4>
+        <p>Powietrzne taksówki eVTOL. Bez korków. Widoki jak z drona.</p>
+      </div>
+      <div>
+        <h4>Oferta</h4>
+        <ul>
+          <li><a href="#produkty">Loty</a></li>
+          <li><a href="#cennik">Abonamenty</a></li>
+          <li><a href="#faq">Bezpieczeństwo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dokumenty</h4>
+        <ul>
+          <li><a href="https://sway.cloud.microsoft/tWo5X3Nzqm01LG3T?ref=Link" target="_blank">Prezentacja Sway</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>© <span id="year"></span></h4>
+        <p>Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </footer>
+</body>
+</html>
